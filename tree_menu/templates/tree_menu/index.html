@@ -3,7 +3,7 @@
 {% if menus %}
     <ul>
         {% for menu in menus%}
-            <li><a href='{{ menu }}'>{{ menu }}</li>
+            <li><a href='{{ menu.url }}'>{{ menu }}</li>
         {% endfor %}
     </ul>
 {% elif menu_name %}
